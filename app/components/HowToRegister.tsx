@@ -88,7 +88,7 @@ export default function HowToRegister() {
             </div>
             <span className="flex items-center gap-1.5 text-xs font-medium text-muted">
               <CircleDashed size={13} />
-              kliknite
+              Kliknite na priečinok
             </span>
           </div>
         </div>
