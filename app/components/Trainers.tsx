@@ -104,7 +104,7 @@ export default function Trainers() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-2 gap-x-10 gap-y-5 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-x-10 gap-y-5 md:grid-cols-4 mb-10">
         {trainers.map((trainer) => (
           <div key={trainer.name} className="flex flex-col gap-3">
             <TiltedCard
@@ -148,6 +148,18 @@ export default function Trainers() {
             />
           </div>
         ))}
+      </div>
+      {/* Footer text + CTA */}
+      <div className="mt-2 flex flex-col items-center gap-1 text-center">
+        <p className="text-sm text-muted">
+          Máte otázky ohľadom tréningov alebo si nie ste istí, čo je pre vás to pravé?
+        </p>
+        <a
+          href="#kontakt"
+          className="text-sm font-semibold text-brand-magenta underline underline-offset-4 decoration-brand-magenta hover:text-brand-magenta-600 transition-colors"
+        >
+          Spojte sa s nami
+        </a>
       </div>
     </section>
   );
