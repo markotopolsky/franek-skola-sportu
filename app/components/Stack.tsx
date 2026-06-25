@@ -78,10 +78,21 @@ export default function Stack({
     cards.map((content, index) => ({ id: index + 1, content })),
   );
 
+  // Random tilt is generated client-side only — server renders 0 for every card
+  // so the markup matches on hydration; motion then animates to the real tilt.
+  const [rotations, setRotations] = useState<Record<number, number>>({});
+
   useEffect(() => {
     setStack(cards.map((content, index) => ({ id: index + 1, content })));
+    if (randomRotation) {
+      setRotations(
+        Object.fromEntries(
+          cards.map((_, index) => [index + 1, Math.random() * 10 - 5]),
+        ),
+      );
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [cards.length]);
+  }, [cards.length, randomRotation]);
 
   const sendToBack = (id: number) => {
     setStack((prev) => {
@@ -108,7 +119,7 @@ export default function Stack({
       onMouseLeave={() => pauseOnHover && setIsPaused(false)}
     >
       {stack.map((card, index) => {
-        const randomRotate = randomRotation ? Math.random() * 10 - 5 : 0;
+        const randomRotate = rotations[card.id] ?? 0;
         return (
           <CardRotate
             key={card.id}

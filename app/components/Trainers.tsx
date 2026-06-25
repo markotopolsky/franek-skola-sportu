@@ -69,7 +69,7 @@ export default function Trainers() {
     <section className="mx-auto max-w-[1200px] px-6 py-10 md:py-12">
       {/* Header + filters */}
       <div className="flex flex-col items-end gap-4 mb-10">
-        <h2 className="font-display text-4xl font-semibold text-ink md:text-5xl">
+        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           Tréneri / Team
         </h2>
 
@@ -151,12 +151,12 @@ export default function Trainers() {
       </div>
       {/* Footer text + CTA */}
       <div className="mt-2 flex flex-col items-center gap-1 text-center">
-        <p className="text-sm text-muted">
+        <p className="text-base text-muted">
           Máte otázky ohľadom tréningov alebo si nie ste istí, čo je pre vás to pravé?
         </p>
         <a
           href="#kontakt"
-          className="text-sm font-semibold text-brand-magenta underline underline-offset-4 decoration-brand-magenta hover:text-brand-magenta-600 transition-colors"
+          className="text-base font-semibold text-brand-magenta underline underline-offset-4 decoration-brand-magenta hover:text-brand-magenta-600 transition-colors"
         >
           Spojte sa s nami
         </a>

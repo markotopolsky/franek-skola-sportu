@@ -16,8 +16,8 @@
   --color-ink-soft: #1d2026;
   --color-muted: #6b7280; /* secondary text */
   --color-line: #ececec; /* hairline borders */
-  --color-surface: #ffffff;
-  --color-surface-soft: #FCFCFC;
+  --color-surface: #ffffff; /* crisp white — cards, nav bar, anything that should pop */
+  --color-surface-soft: #ECE7DC; /* same warm family, one shade deeper — gentle section rhythm */
   
   
   
@@ -30,7 +30,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #F5F2EC; /* same soft pastel as the page base — no harsh white */
   --foreground: var(--color-ink);
 }
 

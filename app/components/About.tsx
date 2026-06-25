@@ -12,10 +12,10 @@ export default function About() {
       <div className="mx-auto grid max-w-[1200px] items-center gap-8 px-6 py-10 md:grid-cols-2 md:gap-10 md:py-12">
         {/* Text */}
         <div>
-          <h2 className="font-display text-4xl font-semibold text-ink md:text-5xl">
+          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             O nás
           </h2>
-          <div className="mt-6 space-y-4 text-[15px] leading-7 text-muted">
+          <div className="mt-6 space-y-4 text-base leading-7 text-muted">
             <p>
             Našu históriu sme začali písať v roku 2014 plaveckými kurzami pre deti. Postupne sme naše aktivity rozšírili o atletiku, triatlon a všeobecnú prípravu „Posilovačka je HRÁČKA“. Vďaka rastúcemu záujmu dnes poskytujeme širokú škálu tréningov od plávania až po individuálnu kondičnú prípravu, a to nielen pre deti, ale aj pre dospelých.            
             </p>

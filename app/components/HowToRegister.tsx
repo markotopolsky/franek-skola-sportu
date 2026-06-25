@@ -44,7 +44,7 @@ export default function HowToRegister() {
   return (
     <section className="bg-surface-soft">
       <div className="mx-auto max-w-[1200px] px-6 py-10 md:py-12">
-        <h2 className="font-display text-4xl font-semibold text-ink md:text-5xl">
+        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           Ako sa prihlásiť
         </h2>
 
@@ -54,14 +54,14 @@ export default function HowToRegister() {
           <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
             {steps.map((step, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="font-display text-5xl font-bold leading-none text-brand-magenta shrink-0">
+                <span className="font-display text-4xl font-bold leading-none text-brand-magenta shrink-0">
                   {i + 1}.
                 </span>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-ink">
                     {step.title}
                   </p>
-                  <p className="mt-1.5 text-sm leading-6 text-muted">
+                  <p className="mt-1.5 text-base leading-7 text-muted">
                     {step.description}
                   </p>
                 </div>
@@ -95,12 +95,12 @@ export default function HowToRegister() {
 
         {/* Info */}
         <div className="mt-4 space-y-3 border-t border-line pt-8">
-          <p className="max-w-xl text-sm leading-6 text-muted">
+          <p className="max-w-xl text-base leading-7 text-muted">
             Vytvorením registrácie do kurzu sa Vám automaticky vytvorí
             používateľské konto, kde môžete nájsť rôzne informácie a možnosť
             správy dochádzky.
           </p>
-          <p className="max-w-xl text-sm leading-6 text-muted">
+          <p className="max-w-xl text-base leading-7 text-muted">
             Pre prihlásenie do Vášho konta je potrebné na stránke
             &ldquo;Profil&rdquo; zadať svoj e-mail, na ktorý Vám bude zaslaný
             prihlasovací odkaz, po kliknutí na ktorý budete prihlásený do
