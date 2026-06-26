@@ -50,8 +50,8 @@ export default function HowToRegister() {
 
         {/* Steps + Folder */}
         <div className="mt-10 grid items-center gap-6 md:grid-cols-[4fr_2fr]">
-          {/* Left: 2-col step grid */}
-          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+          {/* Left: step grid — column-major so it reads 1-2-3 down the left, 4-5-6 down the right */}
+          <div className="grid gap-x-10 gap-y-8 sm:grid-flow-col sm:grid-rows-3">
             {steps.map((step, i) => (
               <div key={i} className="flex items-start gap-4">
                 <span className="font-display text-4xl font-bold leading-none text-brand-magenta shrink-0">

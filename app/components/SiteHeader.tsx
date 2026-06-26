@@ -63,13 +63,13 @@ export default function SiteHeader() {
               href="#"
               className="text-ink transition-colors hover:text-brand-magenta"
             >
-              Registrovať sa
+              Prihlásiť sa do konta
             </a>
             <a
               href="#"
               className="inline-flex items-center rounded-full bg-brand-magenta px-6 py-2.5 text-white transition-colors hover:bg-brand-magenta-600"
             >
-              Prihlásiť sa
+              Registrácia na kurz
             </a>
           </div>
         </div>

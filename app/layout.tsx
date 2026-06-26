@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
+import SiteHeader from "./components/SiteHeader";
+import Footer from "./components/Footer";
 
 // Body font — highly legible workhorse, full Slovak diacritics support.
 const inter = Inter({
@@ -31,7 +33,11 @@ export default function RootLayout({
       lang="sk"
       className={`${inter.variable} ${sora.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <SiteHeader />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
