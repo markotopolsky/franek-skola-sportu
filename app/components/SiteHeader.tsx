@@ -182,12 +182,6 @@ export default function SiteHeader() {
           <div className="flex items-center gap-4 text-sm font-medium">
             <a
               href="#"
-              className="whitespace-nowrap text-ink transition-colors hover:text-brand-magenta"
-            >
-              Prihlásiť sa do konta
-            </a>
-            <a
-              href="#"
               className="inline-flex items-center whitespace-nowrap rounded-full bg-brand-magenta px-6 py-2.5 text-white transition-colors hover:bg-brand-magenta-600"
             >
               Registrácia na kurz
